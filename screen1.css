@@ -1,15 +1,63 @@
-.jumbotron{
-    width: 100%;
-    height: 20%;
+/* jumbotron properties including main big image on screen1*/
+
+.page-header{
+  height: 70px;
+  font-family: Sans-Serif;
+    
 }
 
-.jumbotron-image{
-    width: 1440px;
-    height: 500px;
+.jumbotron {
+    height: 400px;
+    background-image: url("http://337be24b3dc6fa88319a-7601ef3edefa8ce5b9804dfa0e8536c1.r65.cf2.rackcdn.com/da30ca911754e6a36bd5f0df19a5549d.gif");
+    background-size: cover;
+}
+
+
+.jumbotron2 {
+    height: 250px;
+    background-color: #0099ff;
+    text-align: center;
+}
+
+.buttonsAndGly {
+    display: inline-block;
+    padding-top: 35px;
+   
+
+}
+
+.glyphicon {
+    font-size: 5em;
+    color:#1D3E5A;
+  
     
-    /*
-    ASK ABRAHAM HOW TO MAKE THE IMAGE SAME SIZE AS JOMBOTRON
-    */
+}
+
+.glyphicon:hover{
+    color:#0099ff;
+}
+
+
+/* cohor 2016 button propertien on screen1*/
+
+.cohor-2016-button {
+    text-align: center;
+    padding-top: 90px;
+ padding-bottom: 90px;
+}
+
+.container-fluir{
+    
+    height: 400px;
   
 }
 
+.page-footer{
+ 
+    background-color: #001a33;
+    height: 100px;
+    color: #e6f3ff;
+   
+
+
+}
