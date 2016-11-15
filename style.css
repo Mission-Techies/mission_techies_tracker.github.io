@@ -1,11 +1,13 @@
-
 .student{
   color: blue;
 }
+
 
 .student img {
   width: 100px;
   height: auto;
   border-radius: 10%;
   box-shadow: 20px 23px 96px -30px rgba(0, 0, 0, 0.75);
+
 }
+

@@ -19,7 +19,7 @@ function studentRecords(data)
                            var student_birthday = student.fields['Birthday']
                            var student_sex = student.fields['Sex']
                            var student_pics = student.fields['Picture']
-                                                     
+                          
                            var student_info = ''
                            if (student_name) {
                                             student_info += `<li>`
