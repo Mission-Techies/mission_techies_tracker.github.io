@@ -1,15 +1,10 @@
 /* jumbotron properties including main big image on screen1*/
 
-.page-header{
-  height: 70px;
-  font-family: Sans-Serif;
-    
-}
 
 .jumbotron {
     height: 400px;
-    background-image: url("http://337be24b3dc6fa88319a-7601ef3edefa8ce5b9804dfa0e8536c1.r65.cf2.rackcdn.com/da30ca911754e6a36bd5f0df19a5549d.gif");
-    background-size: cover;
+    background-image: url("http://bp2.blogger.com/_IY7CmWJmPL4/R8K5bFaKXpI/AAAAAAAABO0/fH7E6kPibuM/S1600-R/random.jpg");
+    background-size: cover; 
 }
 
 
@@ -52,12 +47,3 @@
   
 }
 
-.page-footer{
- 
-    background-color: #001a33;
-    height: 100px;
-    color: #e6f3ff;
-   
-
-
-}

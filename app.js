@@ -1,6 +1,12 @@
+/*global $*/
 var api_key = 'keyQO62FoqRTWrrGK';
-var student_records = 'https://api.airtable.com/v0/appaQUVFYTDXxVc15/Employee%20Directory?api_key=' + api_key;
-function studentRecords(data)
+var all_student_records = 'https://api.airtable.com/v0/appaQUVFYTDXxVc15/Employee%20Directory?api_key=' + api_key;
+
+
+
+
+// all details
+function allStudentRecords(data)
 {  
     $(data.records).each(function(index, student)
                          {
@@ -22,20 +28,26 @@ function studentRecords(data)
                           
                            var student_info = ''
                            if (student_name) {
-                                            student_info += `<li>`
-                                            
-                         if (student_pics) {
-          $.each(student_pics, function(i, pic){
-            student_info +=`<img src="${pic.url}">`;
-          });
-        }
-                                            
-                         student_info += ` <br> Name: ${student_name} <br> Last Name: ${student_lastName} <br> ID #: ${student_ID} <br> Date of entry: ${student_dateOfEntry} <br> Github: ${student_github} <br> LinkedIn: ${student_linkedin} <br> Phone Number: ${student_phoneNumber} <br> Email: ${student_email} <br> Street Address: ${student_streetAddress} ${student_city} ${student_zipCode} <br> District: ${student_district} <br> Birthday: ${student_birthday} <br> Sex: ${student_sex}`  
-                         student_info +=`</li>`;
-                         student_info += `\b`
+                                            student_info += `<div class="row">`;
+                                                student_info += `<div class="col-sm-6 col-md-4">`;
+                                                if (student_pics) {
+                                                    student_info += `<div class="thumbnail">`;
+                                                $.each(student_pics, function(i, pic){
+                                                    student_info +=`<a href="detail.html?muralID=${pic.url}"><img src="${pic.url}"></a>`;
+                                                    
+                         });
+                        }
+                        
+                         student_info += `</div>`;
+                         student_info += `<div class="caption">${student_name} <br> ${student_lastName}</div>`;
+                         student_info += `</div>`;
+                         student_info += `</div>`;
+                    
                          }
       $('.student').append(student_info);
                        });
 }
 
-$.get(student_records, studentRecords);
+$.get(all_student_records, allStudentRecords);
+
+
