@@ -4,7 +4,6 @@ var all_student_records = 'https://api.airtable.com/v0/appaQUVFYTDXxVc15/Employe
 
 
 
-
 // all details
 function allStudentRecords(data)
 {  
@@ -33,7 +32,7 @@ function allStudentRecords(data)
                                                 if (student_pics) {
                                                     student_info += `<div class="thumbnail">`;
                                                 $.each(student_pics, function(i, pic){
-                                                    student_info +=`<a href="detail.html?muralID=${pic.url}"><img src="${pic.url}"></a>`;
+                                                    student_info +=`<a href="studentDetail.html?studentID=${student.id}"><img src="${pic.url}"></a>`;
                                                     
                          });
                         }
@@ -49,5 +48,14 @@ function allStudentRecords(data)
 }
 
 $.get(all_student_records, allStudentRecords);
+
+
+
+
+
+
+
+
+
 
 
