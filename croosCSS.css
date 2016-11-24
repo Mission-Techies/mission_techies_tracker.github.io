@@ -1,6 +1,6 @@
 .page-header{
-  height: 90px;
-  font-family: Sans-Serif;
+  height: 80px;
+  background-color: #ffffff; /* white color*/
     
 }
 
@@ -8,8 +8,8 @@
  
     background-color: #001a33;
     height: 200px;
-    color: #1e90ff;
-  /*  color: #e6f3ff; */
+    color: #001a33;
+  /*  color: #191970; */
     
 
 }
