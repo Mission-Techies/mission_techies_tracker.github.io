@@ -2,9 +2,14 @@
   margin-right: 100px;
   text-align: right;
   font-weight: bold;
-  display: inline-block; 
+ 
   
 }
+
+.buttons-TOP_MENU{
+    display: inline-block;
+}
+
 
 .glyphicon {
     font-size: 3em;
