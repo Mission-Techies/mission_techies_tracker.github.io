@@ -1,4 +1,4 @@
-.button_HOME{
+.button_HOME .button_BACK{
   margin-right: 100px;
   text-align: right;
   font-weight: bold;
@@ -15,4 +15,8 @@
 
 .glyphicon:hover{
     color:#0099ff;
+}
+
+.student-detail{
+    font-size: 10em;
 }
