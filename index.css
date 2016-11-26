@@ -17,6 +17,14 @@
 .buttonsAndGly {
     display: inline-block;
     padding-top: 35px;
+    font-weight: bold;
+   
+
+}
+
+
+.buttonsAndGly a{
+     font-weight: bold;
    
 
 }
@@ -24,6 +32,7 @@
 .glyphicon {
     font-size: 5em;
     color:#1D3E5A;
+   
   
     
 }
@@ -39,6 +48,11 @@
     text-align: center;
     padding-top: 90px;
  padding-bottom: 90px;
+}
+
+.cohor-2016-button a{
+
+    font-weight: bold;
 }
 
 .container-fluir{
