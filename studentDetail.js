@@ -11,6 +11,7 @@ $.urlParam = function(name){
 }
 
 
+/*global api_key*/
 var url_one_student = function() {
   var url_id = $.urlParam('studentID');
   return 'https://api.airtable.com/v0/appaQUVFYTDXxVc15/Employee%20Directory/' + url_id +'?api_key=' + api_key;
@@ -19,7 +20,22 @@ var url_one_student = function() {
 
 function renderOneStudent(student) {
       var student_name = student.fields['Name'];
+      var student_lastName = student.fields['Last Name']
       var student_pics = student.fields['Picture'];
+      var student_dateOfEntry = student.fields['Date of Entry']
+      var student_github = student.fields['Github URL']
+      var student_linkedin = student.fields['LinkedIn URL']
+      var student_phoneNumber = student.fields['Phone Number']
+      var student_email = student.fields['Personal Email Address']
+      var student_streetAddress = student.fields['Street Address']
+      var student_city = student.fields['City']
+      var student_zipCode = student.fields['Zip Code']
+      var student_district = student.fields['District']
+      var student_birthday = student.fields['Birthday']
+      var student_sex = student.fields['Sex']
+     
+      
+      
       var student_info = '';
       if (student_name) {
         student_info +=`<div class="panel panel-default">`;
@@ -30,7 +46,9 @@ function renderOneStudent(student) {
             });
           }
           student_info +=`</div>`;
-        student_info += `<div class="panel-footer">Name: ${student_name}<br></div>`;
+        student_info += `<div class="panel-footer">Name: ${student_name} ${student_lastName} <br> Date of Entry: ${student_dateOfEntry}
+                        <br> Email: ${student_email} <br> Phone Number: ${student_phoneNumber} <br> LinkedIn: ${student_linkedin} 
+                        <br> Github: ${student_github} <br>  </div>`;
       }
       $('.student-detail').append(student_info);
 }
