@@ -46,9 +46,28 @@ function renderOneStudent(student) {
             });
           }
           student_info +=`</div>`;
-        student_info += `<div class="panel-footer">Name: ${student_name} ${student_lastName} <br> Date of Entry: ${student_dateOfEntry}
-                        <br> Email: ${student_email} <br> Phone Number: ${student_phoneNumber} <br> LinkedIn: ${student_linkedin} 
-                        <br> Github: ${student_github} <br>  </div>`;
+        student_info += `<div class="panel-footer">Name: ${student_name} ${student_lastName} <br> `;
+        
+          if(student_dateOfEntry){
+          student_info += `Date of Entry: ${student_dateOfEntry} <br> `;
+          }         
+                        
+          if(student_email){
+            student_info += ` Email: ${student_email} <br> `;
+          }
+          
+          if(student_phoneNumber){
+            student_info += `Phone Number: ${student_phoneNumber} <br>`;
+          }
+          
+          if(student_linkedin){
+            student_info += `LinkedIn: ${student_linkedin} 
+                        <br>`;
+          }
+          
+          if(student_github){ 
+            student_info += ` Github: ${student_github} <br> </div>`; 
+          }
       }
       $('.student-detail').append(student_info);
 }
