@@ -25,6 +25,7 @@ function renderOneStudent(student) {
       var student_dateOfEntry = student.fields['Date of Entry']
       var student_github = student.fields['Github URL']
       var student_linkedin = student.fields['LinkedIn URL']
+      var student_personalWebSite = student.fields['PersonalWebSite']
       var student_phoneNumber = student.fields['Phone Number']
       var student_email = student.fields['Personal Email Address']
       var student_streetAddress = student.fields['Street Address']
@@ -67,6 +68,9 @@ function renderOneStudent(student) {
           
           if(student_github){ 
             student_info += ` Github: ${student_github} <br> </div>`; 
+          }
+          if(student_personalWebSite){ 
+            student_info += ` Personal WebSite: ${student_personalWebSite} <br> </div>`; 
           }
       }
       $('.student-detail').append(student_info);
