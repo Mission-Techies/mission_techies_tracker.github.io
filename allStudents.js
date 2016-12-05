@@ -112,6 +112,3 @@ $.get(all_student_records, allStudentsRecords);
 
 
 
-
-
-
