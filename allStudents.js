@@ -158,6 +158,6 @@ function allFounderRecords(data)
                        });
 }
 
-$.get(all_student_records, allFounderRecords)
+$.get(all_student_records, allFounderRecords);
 
 
