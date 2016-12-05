@@ -67,7 +67,7 @@ function renderOneStudent(student) {
           }
           
           if(student_github){ 
-            student_info += ` Github: ${student_github} <br> </div>`; 
+            student_info += ` Github: ${student_github} <br> `; 
           }
           if(student_personalWebSite){ 
             student_info += ` Personal WebSite: ${student_personalWebSite} <br> </div>`; 
