@@ -52,7 +52,7 @@
 .studentsContainer{
   background-color: #ffffff;  /* white color */
   border-width: 5px;
-  border-radius: 2%; 
+  border-radius: .50%; 
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
@@ -62,7 +62,7 @@
 
 .professorsContainer{
   border-width: 5px;  
-  border-radius: 2%; 
+  border-radius: .50%; 
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
@@ -71,7 +71,7 @@
 
 .founderContainer{
   border-width: 5px;  
-  border-radius: 2%; 
+  border-radius: .50%; 
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
@@ -101,13 +101,22 @@ h4{
 .button_HOME {
   margin-right: 100px;
   text-align: right;
-  font-weight: bold;
+ 
   
 }
+
+.button_HOME a{
+  font-weight: bold;
+  color:#0099ff;
+ 
+  
+}
+
 
 .glyphicon {
     font-size: 3em;
     color:#1D3E5A;
+    font-weight: bold;
   
     
 }

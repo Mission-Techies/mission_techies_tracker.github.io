@@ -34,6 +34,9 @@ function renderOneStudent(student) {
       var student_district = student.fields['District']
       var student_birthday = student.fields['Birthday']
       var student_sex = student.fields['Sex']
+      var studentCheck = student.fields['student']
+      var professorCheck = student.fields['professor']
+      var founderCheck = student.fields['Founder']
      
       
       
@@ -47,13 +50,13 @@ function renderOneStudent(student) {
             });
           }
           student_info +=`</div>`;
-        student_info += `<div class="panel-footer">Name: ${student_name} ${student_lastName} <br> `;
-        
+        student_info += `<div class="panel-footer"> <h3><strong> ${student_name} ${student_lastName} </strong></h3> <br> `;
+      
           if(student_dateOfEntry){
           student_info += `Date of Entry: ${student_dateOfEntry} <br> `;
           }         
                         
-          if(student_email){
+          if(student_email){  
             student_info += ` Email: ${student_email} <br> `;
           }
           
@@ -62,15 +65,17 @@ function renderOneStudent(student) {
           }
           
           if(student_linkedin){
-            student_info += `LinkedIn: ${student_linkedin} 
+            student_info += `LinkedIn: <a href="${student_linkedin}" target="_blank">${student_linkedin}</a>
                         <br>`;
           }
-          
+
           if(student_github){ 
-            student_info += ` Github: ${student_github} <br> `; 
+            student_info += `Github: <a href="${student_github}" target="_blank">${student_github}</a>
+                        <br>`;
           }
           if(student_personalWebSite){ 
-            student_info += ` Personal WebSite: ${student_personalWebSite} <br> </div>`; 
+            student_info += `Personal Website: <a href="${student_personalWebSite}" target="_blank">${student_personalWebSite}</a>
+                        <br>`; 
           }
       }
       $('.student-detail').append(student_info);

@@ -112,7 +112,7 @@ $.get(all_student_records, allStudentsRecords);
 
 
 
-// all students details
+// all founder details
 function allFounderRecords(data)
 {  
     $(data.records).each(function(index, student)
@@ -139,6 +139,8 @@ function allFounderRecords(data)
                            var student_info = ''
                            if (student_name && founderCheck) {
                                             student_info += `<div class="column">`;
+                                            student_info += `<div class="col-sm-6 col-md-4">`;
+                                            student_info += `</div>`;
                                                 student_info += `<div class="col-sm-6 col-md-4">`;
                                                 if (student_pics) {
                                                     student_info += `<div class="thumbnail">`;
