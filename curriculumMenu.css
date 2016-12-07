@@ -2,13 +2,13 @@
 
 
 
-.studentsContainer{
+.curriculumMenuContainer{
   background-color: #ffffff;  /* white color */
   border-width: 5px;
   border-radius: 2%; 
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
 
 }
 
