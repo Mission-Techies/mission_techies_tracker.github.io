@@ -10,17 +10,21 @@ function allCreatingOpportunitiesRecords(data)
     $(data.records).each(function(index, curriculum)
                          {
                            var curriculum_name = curriculum.fields['Name']
+                           var curriculum_logo = curriculum.fields['LogoPicture']
+                           var curriculum_date = curriculum.fields['Date']
+                           var curriculum_description = curriculum.fields['Description']
                            var curriculum_picture = curriculum.fields['Picture']
                            var curriculum_opportunities = curriculum.fields['OpportunitiesType']
+                           
                           
                            var curriculum_info = ''
                            if (curriculum_name && curriculum_opportunities ) {
                                             curriculum_info += `<div class="column">`;
                                                 curriculum_info += `<div class="col-sm-6 col-md-4">`;
-                                                if (curriculum_picture) {
+                                                if (curriculum_name) {
                                                     curriculum_info += `<div class="thumbnail">`;
-                                                $.each(curriculum_picture, function(i, pic){
-                                                    curriculum_info +=`<a href="studentDetail.html?studentID=${curriculum.id}"><img src="${pic.url}"></a>`;
+                                                $.each(curriculum_logo, function(i, pic){
+                                                    curriculum_info +=`<a href="curriculumDetail.html?studentID=${curriculum.id}"><img src="${pic.url}"></a>`;
                                                     
                          });
                         }
@@ -31,12 +35,11 @@ function allCreatingOpportunitiesRecords(data)
                          curriculum_info += `</div>`;
                     
                          }
-      $('.curriculum').append(curriculum_info);
+      $('.Opportunities').append(curriculum_info);
                        });
 }
 
 $.get(all_curriculum_records, allCreatingOpportunitiesRecords);
-
 
 
 
