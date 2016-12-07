@@ -35,7 +35,7 @@ function allCreatingOpportunitiesRecords(data)
                          curriculum_info += `</div>`;
                     
                          }
-      $('.Opportunities').append(curriculum_info);
+      $('.opportunities').append(curriculum_info);
                        });
 }
 
