@@ -37,7 +37,7 @@ function allCreatingOpportunitiesRecords(data)
                          curriculum_info += `<div class="caption">${curriculum_description} </div>`;
                          curriculum_info += `</div>`;
                          curriculum_info += `</div>`;
-                    
+                        
                          }
       $('.opportunities').append(curriculum_info);
                        });
