@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-     <title>Mission Techies Tracker</title>
+  <meta charset="UTF-8">
+  <title>Mission Techies Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap for mobile friendly, To ensure proper rendering and touch zooming -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="studentDetail.css" type="text/css" />
+  <link rel="stylesheet" href="croosCSS.css" type="text/css" />
  
-     <!--Linking both general and specified css-->
-
-     <link rel="stylesheet" href="croosCSS.css" type="text/css" /> 
-     <link rel="stylesheet" href="studentDetail.css" type="text/css" /> 
-
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  <script type="text/javascript" src="constants.js"></script>
+  <script type="text/javascript" src="studentDetail.js"></script>
  
-     <!--bootstrap for mobile friendly, To ensure proper rendering and touch zooming -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
+ </head>
+
 
 
 
@@ -24,34 +26,35 @@
     <section class="menu_TOP-BUTTONS"
     <div class "container">
      
-            <section class="button_HOME1_BACK2">
-                <a href="allStudentDetails.html" class="btn btn-default btn-lg active" role="button"><span class="glyphicon glyphicon-circle-arrow-left"></span><br>  ALL STUDENTS  </a>
-                <a href="index.html" class="btn btn-default btn-lg active" role="button"><span class="glyphicon glyphicon-home"></span><br>   HOME  </a>
-            </section>
+        <section class="button_HOME1_BACK2">
+
+            <a href="allStudentDetails.html" class="btn btn-default btn-lg active" role="button"><span class="glyphicon glyphicon-circle-arrow-left"></span><br>  ALL STUDENTS  </a>
+            <a href="index.html" class="btn btn-default btn-lg active" role="button"><span class="glyphicon glyphicon-home"></span><br>   HOME  </a>
+  
+        </section>
     
     
     </div> <!-- end of container -->
     </section>
- 
+    
+
     <section class= "studentsContainer">
-    <div class "container">
-             <h1>Attendance<br></h1>
+        <div class "container">
+             
+            <h2> Attendance </h2>
+     
+            <iframe width='900' height='100%' frameborder='0' src="https://docs.google.com/spreadsheets/d/1U3bYDaXsKjW8aDxUoGSSGYwam2Bb59SA1-pg8INxIVI/pubhtml?gid=1415101179&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
-              <!-- embedded code from google spreadsheets --> 
-              <iframe width='900' height='50%' frameborder='0' src="https://docs.google.com/spreadsheets/d/1U3bYDaXsKjW8aDxUoGSSGYwam2Bb59SA1-pg8INxIVI/pubhtml?gid=1415101179&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-
-    </div> <!-- end of container --> 
+     
+        </div> <!-- end of container --> 
     </section> <!-- end of section -->
   
-
-<!--dark blue footer-->
-<div class="page-footer">
- 
- </div>
-
-
+  
+      <!--dark blue footer-->
+    <div class="page-footer"> </div>
+  
+  
 </body>
 
+
 </html>
- 
- 
