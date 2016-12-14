@@ -51,6 +51,7 @@ function renderOneStudent(student) {
           }
           student_info +=`</div>`;
         student_info += `<div class="panel-footer"> <h3><strong> ${student_name} ${student_lastName} </strong></h3> <br> `;
+        
       
           if(student_dateOfEntry){
           student_info += `Date of Entry: ${student_dateOfEntry} <br> `;
