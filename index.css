@@ -1,14 +1,41 @@
 /* jumbotron properties including main big image on screen1*/
 
 
+.page-header {
+  float: left;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+  margin: 25% 0 25% 0;
+
+  border-bottom:30px solid #001a33;
+
+}
+
+.page-header img {
+     width: auto;
+     height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20%;
+
+}
+
+
+
 .jumbotron {
-    height: 400px;
-    background-image: url("http://bp2.blogger.com/_IY7CmWJmPL4/R8K5bFaKXpI/AAAAAAAABO0/fH7E6kPibuM/S1600-R/random.jpg");
-    background-size: cover; 
+    display: block;
+    width: 100%;
+    height: 100px;
+    float: left;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-size:40; 
 }
 
 
 .blue-container {
+    
     height: 250px;
     background-color: #0099ff;   
     text-align: center;
