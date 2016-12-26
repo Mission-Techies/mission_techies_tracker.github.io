@@ -1,5 +1,5 @@
 /*global $*/
-var api_key = 'keyQO62FoqRTWrrGK';
+var api_key = 'keyx8KoDimBmlkxCL';
 var all_curriculum_records = 'https://api.airtable.com/v0/appbcB4zyHIHZjntM/Artists?api_key=' + api_key;
 
 
